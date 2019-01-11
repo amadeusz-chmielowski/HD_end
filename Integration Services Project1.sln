@@ -1,0 +1,27 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2050
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{159641D6-6404-4A2A-AE62-294DE0FE8301}") = "Integration Services Project1", "Integration Services Project1\Integration Services Project1.dtproj", "{DB3C5AE7-141D-4625-BFD5-08353E0BE68E}"
+EndProject
+Project("{D2ABAB84-BF74-430A-B69E-9DC6D40DDA17}") = "Cube1", "Cube1\Cube1.dwproj", "{68A14405-59A6-4946-A367-CB530FE3B804}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Development|Default = Development|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DB3C5AE7-141D-4625-BFD5-08353E0BE68E}.Development|Default.ActiveCfg = Development
+		{DB3C5AE7-141D-4625-BFD5-08353E0BE68E}.Development|Default.Build.0 = Development
+		{68A14405-59A6-4946-A367-CB530FE3B804}.Development|Default.ActiveCfg = Development
+		{68A14405-59A6-4946-A367-CB530FE3B804}.Development|Default.Build.0 = Development
+		{68A14405-59A6-4946-A367-CB530FE3B804}.Development|Default.Deploy.0 = Development
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7C9FEF64-9EE0-461A-86D8-425F2B3B30D9}
+	EndGlobalSection
+EndGlobal

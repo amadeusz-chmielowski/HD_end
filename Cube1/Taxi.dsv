@@ -1,0 +1,367 @@
+﻿<DataSourceView xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="83f337a8-913e-4de9-abb8-c6a74fe8effa" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Taxi</ID>
+  <Name>Taxi</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:CurrentLayout</Name>
+      <Value>_ALL_TABLES_</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:SchemaRestriction</Name>
+      <Value></Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:RetrieveRelationships</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:Layouts</Name>
+      <Value>
+        <Layouts xmlns="">
+          <Diagram>
+            <Name>_ALL_TABLES_</Name>
+            <DiagramLayout />
+            <ShowRelationshipNames>False</ShowRelationshipNames>
+            <UseDiagramDefaultLayout>True</UseDiagramDefaultLayout>
+            <DiagramViewPortLeft>0</DiagramViewPortLeft>
+            <DiagramViewPortTop>0</DiagramViewPortTop>
+            <DiagramBoundingLeft>0</DiagramBoundingLeft>
+            <DiagramBoundingTop>0</DiagramBoundingTop>
+            <DiagramZoom>100</DiagramZoom>
+          </Diagram>
+        </Layouts>
+      </Value>
+    </Annotation>
+  </Annotations>
+  <DataSourceID>Taxi</DataSourceID>
+  <Schema>
+    <xs:schema id="Taxi" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop">
+      <xs:element name="Taxi" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:design-time-name="72e6ed7e-ec86-4fcb-88ff-f0d014036886">
+        <xs:complexType>
+          <xs:choice minOccurs="0" maxOccurs="unbounded">
+            <xs:element name="dbo_CZAS" msprop:design-time-name="beec9a4d-6d8d-4f52-8726-7bea5f575e1a" msprop:DbTableName="CZAS" msprop:FriendlyName="CZAS" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="ID_czas" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:design-time-name="f5c99bcf-6c4b-4fcd-a3ff-4413271ff7bf" msprop:DbColumnName="ID_czas" msprop:FriendlyName="ID_czas" type="xs:long" />
+                  <xs:element name="minuta" msprop:design-time-name="3915a3fb-e56e-415d-ba10-c3e17e86fd68" msprop:DbColumnName="minuta" msprop:FriendlyName="minuta" type="xs:int" minOccurs="0" />
+                  <xs:element name="godzina" msprop:design-time-name="01cfe6e8-4048-478c-8f42-4434160c43e6" msprop:DbColumnName="godzina" msprop:FriendlyName="godzina" type="xs:int" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_DATA_" msprop:design-time-name="a41a24e1-a90e-4030-8011-f40bd95beb15" msprop:DbTableName="DATA_" msprop:FriendlyName="DATA_" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="ID_data" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:design-time-name="4a4cf61c-73bb-407c-9115-482db06f64f7" msprop:DbColumnName="ID_data" msprop:FriendlyName="ID_data" type="xs:long" />
+                  <xs:element name="dzien" msprop:design-time-name="63992427-1d28-4086-86e7-d992f7132abd" msprop:DbColumnName="dzien" msprop:FriendlyName="dzien" type="xs:int" minOccurs="0" />
+                  <xs:element name="miesiac" msprop:design-time-name="7c3a4449-9455-4cbe-96b3-8d53067a9983" msprop:DbColumnName="miesiac" msprop:FriendlyName="miesiac" type="xs:int" minOccurs="0" />
+                  <xs:element name="rok" msprop:design-time-name="a4721111-4ba3-4304-85ad-76d5b38770f4" msprop:DbColumnName="rok" msprop:FriendlyName="rok" type="xs:int" minOccurs="0" />
+                  <xs:element name="dzien_swiateczny" msprop:design-time-name="5c8c7220-a60b-47df-8d6b-fdec54f762f1" msprop:DbColumnName="dzien_swiateczny" msprop:FriendlyName="dzien_swiateczny" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="20" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_KIEROWCA" msprop:design-time-name="c101e24b-d613-4aca-acc5-88fa81ed6961" msprop:DbTableName="KIEROWCA" msprop:FriendlyName="KIEROWCA" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="ID_kierowca" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:design-time-name="84812d8e-c6d7-49bc-8a88-11966299d38f" msprop:DbColumnName="ID_kierowca" msprop:FriendlyName="ID_kierowca" type="xs:long" />
+                  <xs:element name="pesel" msprop:design-time-name="d7e07e78-980e-47d2-b430-799bf0173289" msprop:DbColumnName="pesel" msprop:FriendlyName="pesel" type="xs:long" minOccurs="0" />
+                  <xs:element name="imie_nazwisko" msprop:design-time-name="acf402bf-67e4-42fa-9b5b-ce355ce03826" msprop:DbColumnName="imie_nazwisko" msprop:FriendlyName="imie_nazwisko" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="staz_pracy" msprop:design-time-name="ff14ba3c-349e-4332-9fee-a34dee4b627c" msprop:DbColumnName="staz_pracy" msprop:FriendlyName="staz_pracy" type="xs:int" minOccurs="0" />
+                  <xs:element name="prawo_jazdy" msprop:design-time-name="b838f21b-afb4-4a48-a073-2583e7f9768d" msprop:DbColumnName="prawo_jazdy" msprop:FriendlyName="prawo_jazdy" type="xs:int" minOccurs="0" />
+                  <xs:element name="aktualny" msprop:design-time-name="78c39304-7206-43f5-bf8f-55d4d58c4b3f" msprop:DbColumnName="aktualny" msprop:FriendlyName="aktualny" type="xs:boolean" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_MIASTO" msprop:design-time-name="eca4f747-5a18-43a6-8949-6030e3ec1201" msprop:DbTableName="MIASTO" msprop:FriendlyName="MIASTO" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="ID_miasto" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:design-time-name="e8048925-1d24-4696-8458-d974f9f75a6d" msprop:DbColumnName="ID_miasto" msprop:FriendlyName="ID_miasto" type="xs:long" />
+                  <xs:element name="nazwa" msprop:design-time-name="11f8da7c-11f8-4611-a06a-35132ea907a2" msprop:DbColumnName="nazwa" msprop:FriendlyName="nazwa" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="25" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="wojewodztwo" msprop:design-time-name="d3814a1d-da9c-4261-8216-999a9afbfbd3" msprop:DbColumnName="wojewodztwo" msprop:FriendlyName="wojewodztwo" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="20" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_MIEJSCE" msprop:design-time-name="da19d18c-4883-4651-aa67-b93a862c38cb" msprop:DbTableName="MIEJSCE" msprop:FriendlyName="MIEJSCE" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="ID_miejsce" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:design-time-name="8e7ca26c-1760-4690-ad6a-2ea34a26fd6b" msprop:DbColumnName="ID_miejsce" msprop:FriendlyName="ID_miejsce" type="xs:long" />
+                  <xs:element name="miasto" msprop:design-time-name="1996409b-5c1e-4d83-b69d-b640c5114b4d" msprop:DbColumnName="miasto" msprop:FriendlyName="miasto" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="25" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="ulica" msprop:design-time-name="812257f6-5cdd-4140-88d8-a86b07c0fda8" msprop:DbColumnName="ulica" msprop:FriendlyName="ulica" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="30" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="odleglosc_dworzec" msprop:design-time-name="eb0af040-6974-401f-88bd-828bf6a11344" msprop:DbColumnName="odleglosc_dworzec" msprop:FriendlyName="odleglosc_dworzec" type="xs:double" minOccurs="0" />
+                  <xs:element name="odleglosc_hala" msprop:design-time-name="a50cbc32-c0bb-48a5-a450-df5b39672368" msprop:DbColumnName="odleglosc_hala" msprop:FriendlyName="odleglosc_hala" type="xs:double" minOccurs="0" />
+                  <xs:element name="odleglosc_stadion" msprop:design-time-name="13d03a3e-0005-401a-a303-5dc3df6686c1" msprop:DbColumnName="odleglosc_stadion" msprop:FriendlyName="odleglosc_stadion" type="xs:double" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_PLATNOSC" msprop:design-time-name="034f60d1-5107-4b8f-9487-36a45a0eda74" msprop:DbTableName="PLATNOSC" msprop:FriendlyName="PLATNOSC" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="ID_platnosc" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:design-time-name="f0ab1c14-8964-4da2-abe6-51e36fec747c" msprop:DbColumnName="ID_platnosc" msprop:FriendlyName="ID_platnosc" type="xs:long" />
+                  <xs:element name="nr_faktury" msprop:design-time-name="902acd50-4505-4ad8-a8d2-24a78469bde4" msprop:DbColumnName="nr_faktury" msprop:FriendlyName="nr_faktury" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="15" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="status_platnosci" msprop:design-time-name="e845d7ca-b5d7-49c1-8b20-2606f3f89115" msprop:DbColumnName="status_platnosci" msprop:FriendlyName="status_platnosci" type="xs:int" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_PORA" msprop:design-time-name="e878792e-6bdf-4a74-a67d-4b7c79124a9b" msprop:DbTableName="PORA" msprop:FriendlyName="PORA" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="ID_pora" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:design-time-name="596fa69c-0f50-41d4-b6df-072dc6c773bf" msprop:DbColumnName="ID_pora" msprop:FriendlyName="ID_pora" type="xs:long" />
+                  <xs:element name="dzien_tygodnia" msprop:design-time-name="1f45216e-4c1f-424a-94ec-c55d6ee82d32" msprop:DbColumnName="dzien_tygodnia" msprop:FriendlyName="dzien_tygodnia" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="12" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="pora_dnia" msprop:design-time-name="05278d3d-058f-48c9-905b-5fab03d76fd5" msprop:DbColumnName="pora_dnia" msprop:FriendlyName="pora_dnia" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="25" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_PRZEJAZD" msprop:design-time-name="0cfcda0d-83ad-49ad-9b81-81812f107dc4" msprop:DbTableName="PRZEJAZD" msprop:FriendlyName="PRZEJAZD" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="ID_przejazdu" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:design-time-name="a3710a1b-8a99-4266-b49e-f4a8610cb1f4" msprop:DbColumnName="ID_przejazdu" msprop:FriendlyName="ID_przejazdu" type="xs:long" />
+                  <xs:element name="oplata" msprop:design-time-name="4e411dd6-222b-4ad4-8108-32e9f822c577" msprop:DbColumnName="oplata" msprop:FriendlyName="oplata" type="xs:double" minOccurs="0" />
+                  <xs:element name="kilometry" msprop:design-time-name="8a95c45c-72bd-41af-a999-a13cd36d72ec" msprop:DbColumnName="kilometry" msprop:FriendlyName="kilometry" type="xs:double" minOccurs="0" />
+                  <xs:element name="zysk" msprop:design-time-name="3caad6d8-4d40-4741-ab59-de78abdb742a" msprop:DbColumnName="zysk" msprop:FriendlyName="zysk" type="xs:double" minOccurs="0" />
+                  <xs:element name="czas_przejazdu" msprop:design-time-name="b607fcc0-c359-4f36-b1c1-42eaea6aa64c" msprop:DbColumnName="czas_przejazdu" msprop:FriendlyName="czas_przejazdu" type="xs:long" minOccurs="0" />
+                  <xs:element name="id_miasto" msprop:design-time-name="584242f5-5d4a-4d80-9b91-a4dc780ccf51" msprop:DbColumnName="id_miasto" msprop:FriendlyName="id_miasto" type="xs:long" minOccurs="0" />
+                  <xs:element name="id_pora" msprop:design-time-name="c0880e00-d450-48d4-bed1-7b29de3141e8" msprop:DbColumnName="id_pora" msprop:FriendlyName="id_pora" type="xs:long" minOccurs="0" />
+                  <xs:element name="id_miejsce_start" msprop:design-time-name="53cca45d-4e7a-4184-ab4f-476169197674" msprop:DbColumnName="id_miejsce_start" msprop:FriendlyName="id_miejsce_start" type="xs:long" minOccurs="0" />
+                  <xs:element name="id_miejsce_koniec" msprop:design-time-name="9081460f-e074-47fd-a5be-a4424d3b83f2" msprop:DbColumnName="id_miejsce_koniec" msprop:FriendlyName="id_miejsce_koniec" type="xs:long" minOccurs="0" />
+                  <xs:element name="id_platnosc" msprop:design-time-name="35685047-5664-4756-9bfa-efc6ea11e9ed" msprop:DbColumnName="id_platnosc" msprop:FriendlyName="id_platnosc" type="xs:long" minOccurs="0" />
+                  <xs:element name="id_data_start" msprop:design-time-name="95b9700d-ffb7-46c5-ac3f-f9b46c6ec007" msprop:DbColumnName="id_data_start" msprop:FriendlyName="id_data_start" type="xs:long" minOccurs="0" />
+                  <xs:element name="id_czas_start" msprop:design-time-name="5f870aa8-69d3-41b9-9ffb-aad78524e690" msprop:DbColumnName="id_czas_start" msprop:FriendlyName="id_czas_start" type="xs:long" minOccurs="0" />
+                  <xs:element name="id_data_koniec" msprop:design-time-name="ac8f982b-cec1-4904-8038-a9f2bb6f6cff" msprop:DbColumnName="id_data_koniec" msprop:FriendlyName="id_data_koniec" type="xs:long" minOccurs="0" />
+                  <xs:element name="id_czas_koniec" msprop:design-time-name="7464592b-ee3a-465d-8d2f-7911293ca648" msprop:DbColumnName="id_czas_koniec" msprop:FriendlyName="id_czas_koniec" type="xs:long" minOccurs="0" />
+                  <xs:element name="id_zmiana" msprop:design-time-name="4cebc935-1772-4714-abf2-b61848c603bc" msprop:DbColumnName="id_zmiana" msprop:FriendlyName="id_zmiana" type="xs:long" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_SAMOCHOD" msprop:design-time-name="d1c841cd-f1af-48ef-8612-3d122cfc434b" msprop:DbTableName="SAMOCHOD" msprop:FriendlyName="SAMOCHOD" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="ID_samochod" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:design-time-name="ee346a4f-2b00-4dbb-b42c-d45c47515de0" msprop:DbColumnName="ID_samochod" msprop:FriendlyName="ID_samochod" type="xs:long" />
+                  <xs:element name="nr_rejestracyjny" msprop:design-time-name="be6603d6-e677-4cf5-8026-e3810feeb210" msprop:DbColumnName="nr_rejestracyjny" msprop:FriendlyName="nr_rejestracyjny" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="10" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="nazwa" msprop:design-time-name="2653018c-2e00-4085-96bd-194c1e64e3cd" msprop:DbColumnName="nazwa" msprop:FriendlyName="nazwa" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="30" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="klasa" msprop:design-time-name="039327af-96fe-4235-a34e-ac46c4593d95" msprop:DbColumnName="klasa" msprop:FriendlyName="klasa" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="1" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="liczba_miejsc" msprop:design-time-name="18dd175b-1cd6-4e5c-a445-d7de460610f8" msprop:DbColumnName="liczba_miejsc" msprop:FriendlyName="liczba_miejsc" type="xs:int" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_TIME_" msprop:design-time-name="45e456ed-b261-4e91-acdf-339f33b33882" msprop:DbTableName="TIME_" msprop:FriendlyName="TIME_" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="ID_czas" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:design-time-name="5716372b-62f2-4414-9636-308416acc341" msprop:DbColumnName="ID_czas" msprop:FriendlyName="ID_czas" type="xs:long" />
+                  <xs:element name="godzina" msprop:design-time-name="6ab9a890-9cd1-4b28-b9cc-0e386dec9cd9" msprop:DbColumnName="godzina" msprop:FriendlyName="godzina" type="xs:int" minOccurs="0" />
+                  <xs:element name="minuta" msprop:design-time-name="27436e54-c60b-48d4-a57e-a57af31d5750" msprop:DbColumnName="minuta" msprop:FriendlyName="minuta" type="xs:int" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_ZATRUDNIENIE" msprop:design-time-name="526c3f86-4471-41cd-ac0a-63c77ee32ebe" msprop:DbTableName="ZATRUDNIENIE" msprop:FriendlyName="ZATRUDNIENIE" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="ID_zatrudnienia" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:design-time-name="29b43bd5-29fc-486d-8729-2e25fba4ec3f" msprop:DbColumnName="ID_zatrudnienia" msprop:FriendlyName="ID_zatrudnienia" type="xs:long" />
+                  <xs:element name="liczba_kierowcow" msprop:design-time-name="7ef18689-f4e1-4ddb-b964-1fa44ba30d3b" msprop:DbColumnName="liczba_kierowcow" msprop:FriendlyName="liczba_kierowcow" type="xs:int" minOccurs="0" />
+                  <xs:element name="id_miasto" msprop:design-time-name="f81e9021-ea24-441b-b3dd-123b4b1e7530" msprop:DbColumnName="id_miasto" msprop:FriendlyName="id_miasto" type="xs:long" minOccurs="0" />
+                  <xs:element name="id_data" msprop:design-time-name="8f16cfe2-c0ac-46bb-9dec-91161be4f560" msprop:DbColumnName="id_data" msprop:FriendlyName="id_data" type="xs:long" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_ZMIANA" msprop:design-time-name="55b2eab2-21a0-4f46-a6b8-8c015d366399" msprop:DbTableName="ZMIANA" msprop:FriendlyName="ZMIANA" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="ID_zmiana" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:design-time-name="262dfa2b-c800-4e20-919b-84ad2abde93e" msprop:DbColumnName="ID_zmiana" msprop:FriendlyName="ID_zmiana" type="xs:long" />
+                  <xs:element name="czas_zmiany" msprop:design-time-name="79a97bae-b7d8-4031-a732-53d60baa6eb2" msprop:DbColumnName="czas_zmiany" msprop:FriendlyName="czas_zmiany" type="xs:double" minOccurs="0" />
+                  <xs:element name="id_data" msprop:design-time-name="98390a77-c72a-4837-8826-a9b51f1e8128" msprop:DbColumnName="id_data" msprop:FriendlyName="id_data" type="xs:long" minOccurs="0" />
+                  <xs:element name="id_kierowca" msprop:design-time-name="55a78524-cd6a-462e-92aa-9ca3ff2021a4" msprop:DbColumnName="id_kierowca" msprop:FriendlyName="id_kierowca" type="xs:long" minOccurs="0" />
+                  <xs:element name="id_samochod" msprop:design-time-name="0d7533f6-bff2-46b5-97c9-2e6263ff3924" msprop:DbColumnName="id_samochod" msprop:FriendlyName="id_samochod" type="xs:long" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+          </xs:choice>
+        </xs:complexType>
+        <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_CZAS" />
+          <xs:field xpath="ID_czas" />
+        </xs:unique>
+        <xs:unique name="dbo_DATA__Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_DATA_" />
+          <xs:field xpath="ID_data" />
+        </xs:unique>
+        <xs:unique name="dbo_KIEROWCA_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_KIEROWCA" />
+          <xs:field xpath="ID_kierowca" />
+        </xs:unique>
+        <xs:unique name="dbo_MIASTO_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_MIASTO" />
+          <xs:field xpath="ID_miasto" />
+        </xs:unique>
+        <xs:unique name="dbo_MIEJSCE_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_MIEJSCE" />
+          <xs:field xpath="ID_miejsce" />
+        </xs:unique>
+        <xs:unique name="dbo_PLATNOSC_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_PLATNOSC" />
+          <xs:field xpath="ID_platnosc" />
+        </xs:unique>
+        <xs:unique name="dbo_PORA_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_PORA" />
+          <xs:field xpath="ID_pora" />
+        </xs:unique>
+        <xs:unique name="dbo_PRZEJAZD_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_PRZEJAZD" />
+          <xs:field xpath="ID_przejazdu" />
+        </xs:unique>
+        <xs:unique name="dbo_SAMOCHOD_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_SAMOCHOD" />
+          <xs:field xpath="ID_samochod" />
+        </xs:unique>
+        <xs:unique name="dbo_TIME__Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_TIME_" />
+          <xs:field xpath="ID_czas" />
+        </xs:unique>
+        <xs:unique name="dbo_ZATRUDNIENIE_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_ZATRUDNIENIE" />
+          <xs:field xpath="ID_zatrudnienia" />
+        </xs:unique>
+        <xs:unique name="dbo_ZMIANA_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_ZMIANA" />
+          <xs:field xpath="ID_zmiana" />
+        </xs:unique>
+        <xs:keyref name="FK__ZMIANA__id_data__3429BB53" refer="dbo_DATA__Constraint1">
+          <xs:selector xpath=".//dbo_ZMIANA" />
+          <xs:field xpath="id_data" />
+        </xs:keyref>
+        <xs:keyref name="FK__ZMIANA__id_samoc__361203C5" refer="dbo_SAMOCHOD_Constraint1">
+          <xs:selector xpath=".//dbo_ZMIANA" />
+          <xs:field xpath="id_samochod" />
+        </xs:keyref>
+        <xs:keyref name="FK__ZMIANA__id_kiero__351DDF8C" refer="dbo_KIEROWCA_Constraint1">
+          <xs:selector xpath=".//dbo_ZMIANA" />
+          <xs:field xpath="id_kierowca" />
+        </xs:keyref>
+        <xs:keyref name="FK__ZATRUDNIE__id_da__2F650636" refer="dbo_DATA__Constraint1">
+          <xs:selector xpath=".//dbo_ZATRUDNIENIE" />
+          <xs:field xpath="id_data" />
+        </xs:keyref>
+        <xs:keyref name="FK__ZATRUDNIE__id_mi__2E70E1FD" refer="dbo_MIASTO_Constraint1">
+          <xs:selector xpath=".//dbo_ZATRUDNIENIE" />
+          <xs:field xpath="id_miasto" />
+        </xs:keyref>
+        <xs:keyref name="FK__PRZEJAZD__id_zmi__4183B671" refer="dbo_ZMIANA_Constraint1">
+          <xs:selector xpath=".//dbo_PRZEJAZD" />
+          <xs:field xpath="id_zmiana" />
+        </xs:keyref>
+        <xs:keyref name="FK__PRZEJAZD__id_dat__3F9B6DFF" refer="dbo_DATA__Constraint1">
+          <xs:selector xpath=".//dbo_PRZEJAZD" />
+          <xs:field xpath="id_data_koniec" />
+        </xs:keyref>
+        <xs:keyref name="FK__PRZEJAZD__id_mie__3AD6B8E2" refer="dbo_MIEJSCE_Constraint1">
+          <xs:selector xpath=".//dbo_PRZEJAZD" />
+          <xs:field xpath="id_miejsce_start" />
+        </xs:keyref>
+        <xs:keyref name="FK__PRZEJAZD__id_cza__3EA749C6" refer="dbo_TIME__Constraint1">
+          <xs:selector xpath=".//dbo_PRZEJAZD" />
+          <xs:field xpath="id_czas_start" />
+        </xs:keyref>
+        <xs:keyref name="FK__PRZEJAZD__id_dat__3DB3258D" refer="dbo_DATA__Constraint1">
+          <xs:selector xpath=".//dbo_PRZEJAZD" />
+          <xs:field xpath="id_data_start" />
+        </xs:keyref>
+        <xs:keyref name="FK__PRZEJAZD__id_mia__38EE7070" refer="dbo_MIASTO_Constraint1">
+          <xs:selector xpath=".//dbo_PRZEJAZD" />
+          <xs:field xpath="id_miasto" />
+        </xs:keyref>
+        <xs:keyref name="FK__PRZEJAZD__id_cza__408F9238" refer="dbo_TIME__Constraint1">
+          <xs:selector xpath=".//dbo_PRZEJAZD" />
+          <xs:field xpath="id_czas_koniec" />
+        </xs:keyref>
+        <xs:keyref name="FK__PRZEJAZD__id_mie__3BCADD1B" refer="dbo_MIEJSCE_Constraint1">
+          <xs:selector xpath=".//dbo_PRZEJAZD" />
+          <xs:field xpath="id_miejsce_koniec" />
+        </xs:keyref>
+        <xs:keyref name="FK__PRZEJAZD__id_pla__3CBF0154" refer="dbo_PLATNOSC_Constraint1">
+          <xs:selector xpath=".//dbo_PRZEJAZD" />
+          <xs:field xpath="id_platnosc" />
+        </xs:keyref>
+        <xs:keyref name="FK__PRZEJAZD__id_por__39E294A9" refer="dbo_PORA_Constraint1">
+          <xs:selector xpath=".//dbo_PRZEJAZD" />
+          <xs:field xpath="id_pora" />
+        </xs:keyref>
+      </xs:element>
+    </xs:schema>
+    <Taxi xmlns="" />
+  </Schema>
+</DataSourceView>

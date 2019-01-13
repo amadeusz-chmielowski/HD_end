@@ -47,7 +47,7 @@
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.Dimension</Type>
-        <TimeStamp>oVosdzteZZ5VNx0tf9klguKSWu4=12.01.2019 00:03:3511.01.2019 23:58:56</TimeStamp>
+        <TimeStamp>gjZB3M2M/dvNt/thD9hM8mmLkIo=13.01.2019 16:40:1511.01.2019 23:58:56</TimeStamp>
         <ID>
           <String>DATA</String>
         </ID>
@@ -82,7 +82,7 @@
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.Dimension</Type>
-        <TimeStamp>FK258HbleGLEufn0JdQkU9rKEy4=12.01.2019 00:03:3511.01.2019 23:58:56</TimeStamp>
+        <TimeStamp>zl9ILssJnWlQIwA6aY7dIoJYbrg=13.01.2019 16:40:1511.01.2019 23:58:56</TimeStamp>
         <ID>
           <String>TIME</String>
         </ID>
@@ -96,7 +96,7 @@
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.Cube</Type>
-        <TimeStamp>rI/jv78/8Ct3CYXTCStaFlW/+cg=12.01.2019 00:03:3511.01.2019 23:58:55/dOuiBEUt1nEPNWaeK8KL+1NQk8=11.01.2019 23:58:5611.01.2019 23:58:55</TimeStamp>
+        <TimeStamp>FSznAwneYbrGiCAadr4Ex1Fv/kk=13.01.2019 14:39:5411.01.2019 23:58:55/dOuiBEUt1nEPNWaeK8KL+1NQk8=11.01.2019 23:58:5611.01.2019 23:58:55</TimeStamp>
         <ID>
           <String>Taxi</String>
         </ID>
@@ -113,5 +113,5 @@
   </Snapshot>
   <AssemblyLocations />
   <ProcessingComplete>true</ProcessingComplete>
-  <LastDeployed>2019-01-11T23:03:43.013333Z</LastDeployed>
+  <LastDeployed>2019-01-13T15:40:50.3Z</LastDeployed>
 </DeploymentSnapshot>
